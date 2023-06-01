@@ -17,7 +17,7 @@ public class UserDao {
             System.err.print("ClassNotFoundException: ");
         }
         try {
-            con = DriverManager.getConnection(urlMySQL,"root","root");//ket noi
+            con = DriverManager.getConnection(urlMySQL,"root","12345678");//ket noi
         } catch(SQLException ex) {
             System.err.println("SQLException: " + ex.getMessage());
         }
@@ -28,7 +28,7 @@ public class UserDao {
         try{
             Connection con=getConnection();
             PreparedStatement ps=con.prepareStatement(
-                    "insert into register(name,password,email,sex,country) values(?,?,?,?,?)");
+                    "insert into user(name,password,email,sex,country) values(?,?,?,?,?)");
             ps.setString(1,u.getName());
             ps.setString(2,u.getPassword());
             ps.setString(3,u.getEmail());
@@ -58,7 +58,7 @@ public class UserDao {
         int status=0;
         try{
             Connection con=getConnection();
-            PreparedStatement ps=con.prepareStatement("delete from register where id=?");
+            PreparedStatement ps=con.prepareStatement("delete from user where id=?");
             ps.setInt(1,u.getId());
             status=ps.executeUpdate();
         }catch(Exception e){System.out.println(e);}

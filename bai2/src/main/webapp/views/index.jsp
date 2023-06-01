@@ -7,6 +7,6 @@
 <body>
 <h1>JSP CRUD Example</h1>
 <a href="/users">View Users</a>
-
+<a href="/views/addUser.jsp">Add user</a>
 </body>
 </html>

@@ -32,10 +32,11 @@
     </td></tr>
     <tr><td>Country:</td><td>
     <select name="country">
-        <option <%= ("Country 1".equals(u.getCountry())) ? "selected" : "" %>>Country 1</option>
-        <option <%= ("Country 2".equals(u.getCountry())) ? "selected" : "" %>>Country 2</option>
-        <option <%= ("Country 3".equals(u.getCountry())) ? "selected" : "" %>>Country 3</option>
-        <option <%= ("Country 4".equals(u.getCountry())) ? "selected" : "" %>>Country 4</option>
+        <option <%= ("USA".equals(u.getCountry())) ? "selected" : "" %>>USA</option>
+        <option <%= ("Canada".equals(u.getCountry())) ? "selected" : "" %>>Canada</option>
+        <option <%= ("UK".equals(u.getCountry())) ? "selected" : "" %>>UK</option>
+        <option <%= ("Australia".equals(u.getCountry())) ? "selected" : "" %>>Australia</option>
+        <option <%= ("Germany".equals(u.getCountry())) ? "selected" : "" %>>Germany</option>
         <option <%= ("Other".equals(u.getCountry())) ? "selected" : "" %>>Other</option>
     </select>
     </td></tr>
