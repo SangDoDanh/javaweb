@@ -17,7 +17,7 @@ public class UserDao {
             System.err.print("ClassNotFoundException: ");
         }
         try {
-            con = DriverManager.getConnection(urlMySQL,"root","12345678");//ket noi
+            con = DriverManager.getConnection(urlMySQL,"root","root");//ket noi
         } catch(SQLException ex) {
             System.err.println("SQLException: " + ex.getMessage());
         }
